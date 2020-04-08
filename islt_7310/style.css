@@ -1,3 +1,26 @@
 h1 {
-   color: #c22b2b;
+    color: #c22b2b;
 }
+footer {
+    font-size: 15px;
+}
+a:link {
+    color: #0487cb;
+}
+a:hover {
+    color: #05a8fd;
+}
+a:focus {
+    color: #05a8fd;
+}
+a:visited {
+    color: #a817c2;
+}
+a:active {
+    color: #0394e0;
+}
+a {
+    text-decoration: none;
+    font-size: 10pt
+}
+
