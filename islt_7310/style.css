@@ -7,17 +7,15 @@ footer {
 a:link {
     color: #0487cb;
 }
-a:hover {
+a:hover, a:focus {
     color: #05a8fd;
 }
-a:focus {
-    color: #05a8fd;
-}
+
 a:visited {
     color: #8d10a3;
 }
 a:active {
-    color: #0394e0;
+    color: #c22b2b;
 }
 a {
     text-decoration: none;
