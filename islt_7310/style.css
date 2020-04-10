@@ -1,33 +1,53 @@
+/*
+************************************
+Title: Portfolio CSS
+Use: Styles all webpages in the islt_7310 project folder
+Author: Tina Fox
+School/Term: University of Missouri, Spring 2020
+Developed: April 2, 2020
+Tested: April 10, 2020; Passed on Chrome and Firefox browers.
+************************************
+*/
+header {
+    background-color: #faebe7;
+    padding: 40px;
+}
 h1 {
-    color: #fff;
-    font: bold 600% Arial, Helvetica, sans-serif;
+    color: #474544;
+    font: bold 500% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     text-align: center;
-    border-bottom: 15px solid #000;
-    background-color: #c22b2b;
+    border-bottom: 2px dashed #eda591;
+    padding-bottom: 10px;
 }
 h2 {
     font: bold 150% Arial, Helvetica, sans-serif;
+    color: #474544;
 }
 h2+p {
     font-size: 120%;
+    color: #474544;
 }
 h3 {
-    color: #c22b2b;
+    color: #000000;
     font: bold 125% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 h4 {
     font: bold 110% Arial, Helvetica, sans-serif;
+    color: #474544;
+    
 }
 body {
-    background-color: #f7f7f7;
+    background-color: #ffffff;
+    margin: 15px;
 }
 main p {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a:link {
     color: #0487cb;
 }
@@ -45,25 +65,62 @@ a {
     text-decoration: none;
     font-size: 10pt;
 }
+
 li {
     font-family: Arial, Helvetica, sans-serif;
 }
+/*
 li:first-child {
     color: #2c9197;
 }
 li:last-child {
     color: #a34dc3;
 }
+*/
 img {
     float: left;
     margin: 0 1em 1em 1em;
-    padding: 0 0.5em 0.5em 0.5em;
+    padding: 0 0.5em 1em 0.5em;
 }
-blockquote {
-    clear: left;
-}
+
 footer {
-    font-size: 11pt;
     font: 80% Arial, Helvetica, sans-serif;
     border-top: 1px solid #000;
+    margin-top: 2em;
+    padding-top: 5px;
+}
+#intro {
+    padding-top: 1em;
+}
+#goals, #courses {
+    background-color: #faebe7;
+    padding: 20px;
+}
+
+#overview {
+    background-color: #fabdac;
+    padding: 20px;
+    clear: left;
+}
+aside {
+    padding: 50px;
+}
+
+blockquote {
+    color: #474544;
+    font-size: 150%;
+}
+#author {
+    font-size: 90%;
+}
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+}
+.resume p {
+    text-align: center;
+    margin-top: 5em;
+    width: 100%;
+    margin-bottom: 5em;
 }
