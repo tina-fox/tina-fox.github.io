@@ -55,7 +55,7 @@ main .hello {
     text-indent: none;
 }
 main p:last-child::first-line {
-    text-indent: 50px;
+    text-indent: 20px;
 }
 
 main p::first-letter {
