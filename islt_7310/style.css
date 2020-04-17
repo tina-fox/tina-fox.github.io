@@ -5,7 +5,7 @@ Use: Styles all webpages in the islt_7310 project folder
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 2, 2020
-Tested: April 10, 2020; Passed on Chrome and Firefox browers.
+Tested: April 17, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
 header {
@@ -49,13 +49,13 @@ main p {
     font-family: Arial, Helvetica, sans-serif;
 }
 main .dropcap {
-    text-indent: none;
+    text-indent: 0;
 }
 main .hello {
-    text-indent: none;
+    text-indent: 0;
 }
 main p:last-child::first-line {
-    text-indent: 20px;
+    text-indent: 25px;
 }
 
 main p::first-letter {
