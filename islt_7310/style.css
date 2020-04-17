@@ -24,6 +24,7 @@ h1 {
 h2 {
     font: bold 150% Arial, Helvetica, sans-serif;
     color: #474544;
+    margin-top: 1em;
 }
 h2+p {
     font-size: 120%;
@@ -46,6 +47,36 @@ body {
 }
 main p {
     font-family: Arial, Helvetica, sans-serif;
+}
+main .dropcap {
+    text-indent: none;
+}
+main .hello {
+    text-indent: none;
+}
+main p:last-child::first-line {
+    text-indent: 50px;
+}
+
+main p::first-letter {
+    font-size: 300%;
+    font-weight: bold;
+}
+main p:last-child::first-letter {
+    font-size: 100%;
+    font-weight: normal;
+}
+main #intro p::first-letter {
+    font-size: 300%;
+    font-weight: bold;
+}
+main #goals p::first-letter {
+    font-size: 100%;
+    font-weight: normal;
+}
+main #courses p::first-letter {
+    font-size: 100%;
+    font-weight: normal;
 }
 
 a:link {
