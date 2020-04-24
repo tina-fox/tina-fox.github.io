@@ -231,6 +231,7 @@ article {
     border: 1px solid #e5e4e4;
     border-radius: 5px;
     box-shadow: 1px 1px 7px 3px #eeeeee;
+    padding: 30px;
 }
 .contact-info {
     display: flex; /* Flexbox code */
