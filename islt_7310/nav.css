@@ -5,32 +5,66 @@ Use: Styles all navigation menus
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 13, 2020
-Tested: April 17, 2020; Passed on Chrome and Firefox browers.
+Tested: April 24, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
+
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.active {
+    font-weight: bold;
 }
 nav>ul li {
     width: 150px;
     position: relative;
     text-align: center;
     display: inline-block;
-    border: 1px solid #f1c4b7;
-    background-color: #fdd5ca;
+    
+    border-bottom: 2px solid #e2e0e0;
+    background-color: #eeeeee;
     padding: 12px 12px 12px 20px;
     margin-top: 0;
-    margin-bottom: 4px;
+    
 }
 nav ul>li ul {
     position: absolute;
-    margin-top: 17px;
+    margin-top: 14px;
     display: none;
     right: 0%;
     left: 0%;
 }
 nav>ul>li:hover>ul {
     display: block;
+}
+@media only screen and (max-width: 779px) {
+    nav>ul>li:hover>ul {
+    display: none;
+}
+    nav>ul li {
+    width: 100%;
+}
+    label {
+        display: block;
+        cursor: pointer;
+        cursor: pointer;
+    }
+   
+    .menu {
+        text-align: center;
+        width:90%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    nav ul>li ul {
+        display: none;
+    }
 }
