@@ -12,76 +12,95 @@ Tested: April 17, 2020; Passed on Chrome and Firefox browers.
 ************************************
     -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Welcome | Tina Fox Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
 </head>
 <body>
+   
+   
+    <header>
+        <h1>Tina Fox</h1>
+            
+    </header>
+    
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+         <label for="toggle">&#9776;</label>
+         <input type="checkbox" id="toggle"/>
+        
+        <ul class="menu">
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="background.html">Background</a></li>
             <li><a href="#">Projects</a>
-                <ul>
+                <ul >
                     <li><a href="#">Goal 1</a></li>
                     <li><a href="#">Goal 2</a></li>
                     <li><a href="#">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#">Contact</a></li>
+             <li><a href="contact.html">Contact</a></li>
            
         </ul>
     </nav>
-    <header>
-        <h1>Tina Fox</h1>
-    </header>  
+    
+  
+    
     <main>
-        <img src="images/tina-fox.png" alt="Photo of Tina Fox" width="300" height="289">
-        <section id="intro">
-        <h2>Hi! I’m Tina Fox, and I’m a student in the Learning Technologies and Design master’s program.</h2>
-        <p class="hello">I am also an instructional media designer specializing in graphic design and motion graphics for the University of Missouri’s Office of E-Learning. As part of the Course Design and Technology team in Columbia, Missouri, I collaborate with instructional designers, faculty, and other media designers on a wide range of projects, including online and blended courses, videos, handouts, and course quality reviews. It is my goal to help faculty create engaging, meaningful learning experiences for their students and to ensure that students have the best possible experience with their courses. Being an online student in the Learning Technologies and Design program has helped me see things from a student perspective and become a more informed and empathetic media designer. </p>
-        </section>
         
-        
-        <section id="overview">
-        <h3>EDUCATION OVERVIEW</h3>
-        <ul>
-            <li><strong>Master of Science in Learning Technologies and Design</strong><br>
-                School of Information Science and Learning Technologies | University of Missouri<br>
-                Completion Date: Spring 2020</li>
-            <li><strong>Bachelor of Arts in English</strong><br>
-                University of Illinois<br>
-                December 2000</li>
-        </ul>
-        </section>
-        
-        <aside>
-            <blockquote>
+        <section id="image">
+        <img src="images/tina-fox.png" alt="Photo of Tina Fox" width="300" height="289">  
+        <blockquote>
             <p>&ldquo;Wherever there is a human being there is an opportunity for kindness.&rdquo;</p>
             <p id="author">&mdash;Seneca</p>
             </blockquote>
-        </aside>
+        </section>
+        <section id="intro">
+        <h2>Hi! I’m Tina Fox, and I’m a student in the Learning Technologies and Design master’s program.</h2>
+        <p class="hello">I am also an instructional media designer specializing in graphic design and motion graphics for the University of Missouri’s Office of E-Learning. As part of the Course Design and Technology team in Columbia, Missouri, I collaborate with instructional designers, faculty, and other media designers on a wide range of projects, including online and blended courses, videos, handouts, and course quality reviews. It is my goal to help faculty create engaging, meaningful learning experiences for their students and to ensure that students have the best possible experience with their courses. Being an online student in the Learning Technologies and Design program has helped me see things from a student perspective and become a more informed and empathetic media designer. </p>
         
+           <h3>EDUCATION OVERVIEW</h3>
+                <ul>
+                    <li><strong>Master of Science in Learning Technologies and Design</strong><br>
+                        School of Information Science and Learning Technologies | University of Missouri<br>
+                        Completion Date: Spring 2020</li>
+                    <li><strong>Bachelor of Arts in English</strong><br>
+                        University of Illinois<br>
+                        December 2000</li>
+                </ul>   
+            
+         
+        </section>
+        
+      
         <section id="goals">
-        <h3>PROGRAM GOALS</h3>
+        <h2>Program Goals</h2>
         <p>This portfolio demonstrates my ability to meet the Learning Technologies and Design program goals. Each goal contains 1&ndash;3 objectives related to mastery of instructional design, technology, collaborative work, research, analytics, and theory, to name a few. For each goal, I have provided examples and evidence of my understanding.</p>
+       
         
-        <article>
+        <div class="row">
+        <article class="row_cell">
         <h4>Goal 1 &amp; Objectives</h4>
         <p>Meeting this goal means that I have successfully designed, developed, managed, and collaborated on theory- and research-based learning systems and experiences to promote meaningful learning.</p>
+    
+        <p><a href="#">Learn More</a></p>
         </article>
     
-        <article>
+       <article class="row_cell">
         <h4>Goal 2 &amp; Objectives</h4>
         <p>Meeting this goal means that I have successfully used my analytical skills to collect data, apply theoretical frameworks, and evaluate and reflect on the effectiveness of learning systems that I design.</p>
+         <p><a href="#">Learn More</a></p>
         </article>
             
-        <article>
+        <article class="row_cell">
         <h4>Goal 3 &amp; Objectives</h4>
         <p>Meeting this goal means that I have developed the ability to be a socially responsible, reflective, and sensitive technology leader with a strong regard for the intersection of technology and ethics.</p>
+         <p><a href="#">Learn More</a></p>
         </article>
+            </div>
         </section>
     </main>
     
