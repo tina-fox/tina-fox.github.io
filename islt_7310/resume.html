@@ -12,11 +12,12 @@ Tested: April 17, 2020; Passed on Chrome and Firefox browers.
 ************************************
     -->
         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Resume | Tina Fox Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
         <style>
-            main a {font-weight: bold; font-size: 150%; text-transform: uppercase; text-align: center; background-color: #e0927d; padding: 20px;}
+            main a {font-size: 150%; text-align: center; background-color: #333333; padding: 20px 40px;  box-shadow: 1px 1px 3px 5px #eee;}
             main a:link {color: #fff;}
             main a:visited {color: #fff;}
             main a:active {color: #f9f5f5;}
@@ -26,27 +27,33 @@ Tested: April 17, 2020; Passed on Chrome and Firefox browers.
     </style>
 </head>
 <body>
+    <header>
+        <h1>Tina Fox</h1>
+    
+    </header>
+    
      <nav>
-        <ul>
+         <label for="toggle">&#9776;</label>
+         <input type="checkbox" id="toggle"/>
+        
+        <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li class="active"><a href="resume.html">Resume</a></li>
             <li><a href="background.html">Background</a></li>
             <li><a href="#">Projects</a>
-                <ul>
+                <ul >
                     <li><a href="#">Goal 1</a></li>
                     <li><a href="#">Goal 2</a></li>
                     <li><a href="#">Goal 3</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
            
         </ul>
     </nav>
-    <header>
-        <h1>My Resume</h1>
-    </header>
     <main>
+         <h2 class="main">Resume</h2>
         <div class="resume">
             
         
