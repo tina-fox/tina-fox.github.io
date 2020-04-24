@@ -5,20 +5,17 @@ Use: Styles all webpages in the islt_7310 project folder
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 2, 2020
-Tested: April 17, 2020; Passed on Chrome and Firefox browers.
+Tested: April 24, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
 header {
-    background-color: #faebe7;
-    padding: 40px;
+    padding: 2px;
 }
 h1 {
     color: #474544;
-    font: bold 500% Arial, Helvetica, sans-serif;
+    font: bold 400% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-align: center;
-    border-bottom: 2px dashed #eda591;
     padding-bottom: 10px;
 }
 h2 {
@@ -26,34 +23,54 @@ h2 {
     color: #474544;
     margin-top: 1em;
 }
+h2.main {
+    font-size: 350%;
+    text-align: center;
+    font-weight: 100;
+}
+
 h2+p {
     font-size: 120%;
     color: #474544;
 }
 h3 {
-    color: #000000;
+    color: #474544;
     font: bold 125% Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-bottom: 2px dashed #333333;
+    padding-bottom: 5px;
 }
 h4 {
-    font: bold 110% Arial, Helvetica, sans-serif;
+   color: #474544;
+    font: bold 120% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h5 {
     color: #474544;
-    
+    font: 110% Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 0;
 }
 body {
-    background-color: #ffffff;
-    margin: 15px;
+    margin: auto;
+    width: 80%;
 }
 main p {
     font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
 }
+/*
 main .dropcap {
     text-indent: 0;
 }
+
 main .hello {
     text-indent: 0;
 }
+
 main p:last-child::first-line {
     text-indent: 25px;
 }
@@ -78,7 +95,7 @@ main #courses p::first-letter {
     font-size: 100%;
     font-weight: normal;
 }
-
+*/
 a:link {
     color: #0487cb;
 }
@@ -99,6 +116,7 @@ a {
 
 li {
     font-family: Arial, Helvetica, sans-serif;
+     color: #474544;
 }
 /*
 li:first-child {
@@ -109,49 +127,167 @@ li:last-child {
 }
 */
 img {
-    float: left;
-    margin: 0 1em 1em 1em;
+    margin: 2em 1em 2em 1em;
     padding: 0 0.5em 1em 0.5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+   
 }
-
+#image {
+    width: 30%;
+    float: left;
+}
 footer {
     font: 80% Arial, Helvetica, sans-serif;
     border-top: 1px solid #000;
-    margin-top: 2em;
+    margin: 2em 0em;
     padding-top: 5px;
 }
 #intro {
-    padding-top: 1em;
+    padding-top: 2em;
+    width: 60%;
+    float: right;
+    margin-bottom: 2em;
 }
-#goals, #courses {
-    background-color: #faebe7;
+#goals {
+    clear: both;
+}
+#goals article {
+    border: 1px solid #e5e4e4;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 2px #dfdddd;
+}
+#goals article p{
+    text-align: center;
+    padding: 10px;
+}
+#goals a {
+    font-family: sans-serif;
+    font-size: 130%;
+    text-align: center;
+    background-color: #333333;
     padding: 20px;
+    color: #fff;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
 }
-
+/*
 #overview {
     background-color: #fabdac;
     padding: 20px;
-    clear: left;
 }
+*/
 aside {
     padding: 50px;
+    width: 30%;
+    float: right;
 }
 
 blockquote {
     color: #474544;
     font-size: 150%;
+    text-align: center;
 }
 #author {
     font-size: 90%;
 }
 article {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     padding: 20px;
+    margin: 20px 20px 20px 0px;
+}
+.reflect {
+    background-color: #fff;
     margin: 20px;
 }
+
+/* Implementing Flexbox code */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row_cell {
+    flex: 1;
+}
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+#courses article {
+    flex: 1;
+}
+/* End Flexbox code */
 .resume p {
     text-align: center;
     margin-top: 5em;
     width: 100%;
     margin-bottom: 5em;
 }
+
+#form {
+    border: 1px solid #e5e4e4;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 3px #eeeeee;
+}
+.contact-info {
+    display: flex; /* Flexbox code */
+    flex-wrap: wrap; /* Flexbox code */
+    justify-content: space-evenly;
+}
+.contact-info article {
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: center;
+    padding: 20px;
+    color: #9a9a9a;
+    width: 175px;
+    display: block;
+    border: 1px solid #e5e4e4;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 2px #eeeeee;
+}
+article#message {
+    min-height: 300px;
+    min-width: 60%;
+}
+article#click {
+    font-family: sans-serif;
+    font-size: 80%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    width: 175px;
+    display: block;
+    border: 1px solid #e5e4e4;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 0px 0px 6px 2px #eeeeee;
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 50px;
+    color: #474544;
+    line-height: 30px;
+    display: none;
+}
+#toggle {
+    display: none;
+}
+@media only screen and (max-width: 779px) {
+   
+    #intro {
+        width: 100%;
+    }
+    #image {
+        width: 100%;
+    }
+    img { 
+        padding-top: 2em;
+    }
+    
+}
+
