@@ -16,22 +16,47 @@ nav ul {
 }
 .active {
     font-weight: bold;
+    background-color: #d95a4e;
 }
+nav a:link {
+    color: #fff;
+}
+nav a:hover, a:focus {
+    color: #eee;
+}
+
+nav a:visited {
+    color: #fff;
+}
+nav a:active {
+    color: #eee;
+}
+nav a {
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+
 nav>ul li {
     width: 150px;
     position: relative;
     text-align: center;
     display: inline-block;
-    
-    border-bottom: 2px solid #e2e0e0;
-    background-color: #eeeeee;
+    border-bottom: 1px solid #ffffff;
+    background-color: #36bfb1;
     padding: 12px 12px 12px 20px;
     margin-top: 0;
     
 }
+nav>ul li:hover {
+    background-color: #d95a4e;
+}
+nav>ul li:focus {
+    background-color: #d95a4e;
+}
 nav ul>li ul {
     position: absolute;
-    margin-top: 14px;
+    margin-top: 13px;
     display: none;
     right: 0%;
     left: 0%;
