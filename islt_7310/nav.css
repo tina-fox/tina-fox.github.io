@@ -8,11 +8,14 @@ Developed: April 13, 2020
 Tested: April 24, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
-
+nav {
+    width: 100%;
+}
 nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 .active {
     font-weight: bold;
