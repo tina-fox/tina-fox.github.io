@@ -13,15 +13,17 @@ header {
 }
 h1 {
     color: #333333;
-    font: bold 400% Arial, Helvetica, sans-serif;
+    font-family: 'Biryani', sans-serif;
+    font-size: 300%;
     text-transform: uppercase;
     letter-spacing: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 h2 {
-    font: bold 150% Arial, Helvetica, sans-serif;
+    font-size: 180%;
     color: #333333;
     margin-top: 1em;
+    font-family: 'Roboto Slab', serif;
 }
 h2.main {
     font-size: 350%;
@@ -35,7 +37,8 @@ h2+p {
 }
 h3 {
     color: #d95a4e;
-    font: bold 125% Arial, Helvetica, sans-serif;
+    font-size: 125%;
+    font-family: 'Biryani', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-bottom: 2px dashed #d95a4e;
@@ -43,20 +46,23 @@ h3 {
 }
 h4 {
     color: #36bfb1;
-    font: bold 120% Arial, Helvetica, sans-serif;
+    font-size:  120%;
+    font-family: 'Biryani', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
 }
 h5 {
     color: #474544;
-    font: 110% Arial, Helvetica, sans-serif;
+    font-family: 'Biryani', sans-serif;
+    font-size: 110%;
     text-align: center;
     margin-top: 0;
 }
 h6 {
     color: #d95a4e;
-    font: bold 120% Arial, Helvetica, sans-serif;
+    font-family: 'Biryani', sans-serif;
+    font-size: 110%;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -133,6 +139,11 @@ li:last-child {
     color: #a34dc3;
 }
 */
+header img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 img {
     margin: 3em 1em 2em 1em;
     padding: 0 0.5em 1em 0.5em;
@@ -147,8 +158,6 @@ footer {
     margin: 2em 0em;
     padding: 20px;
     text-align: center;
-    background-image: url(images/what-the-hex.png);
-    background-repeat: repeat-x repeat-y;
 }
 footer img {
     display: inline-block;
@@ -167,7 +176,7 @@ footer img {
 }
 #goals {
     clear: both;
-    padding-top: 5em; 
+    padding-top: 3em; 
 }
 #goals article {
     background-color: #fff;
@@ -323,4 +332,50 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
+}
+/* Print styles */
+@media print {
+    h1 {
+        color: #000;
+    }
+    h2 {
+         font-family: serif;
+        color: #000;
+    }
+    h3 {
+        font-family: serif;
+        color: #000;
+        border-bottom: none;
+    }
+    blockquote {
+        font-family: serif;
+        color: #000;
+    }
+    nav {
+        display: none;
+    }
+    body {
+        width: auto;
+        margin: .25in; 
+    }
+    body p {
+        font-family: serif;
+        font-size: 10pt;
+        color: #000;
+    }
+    footer {
+        clear: both;
+        border-top: 1px solid #000;
+        font-family: sans-serif;
+        color: #000;
+    }
+    footer img {
+        display: none;
+    }
+    #goals {
+        display: none;
+    }
+    ul li {
+        font-family: serif;
+    }
 }
