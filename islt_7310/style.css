@@ -5,7 +5,7 @@ Use: Styles all webpages in the islt_7310 project folder
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 2, 2020
-Tested: April 24, 2020; Passed on Chrome and Firefox browers.
+Tested: May 1, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
 header {
@@ -169,6 +169,10 @@ footer img {
     display: inline-block;
     padding: 2px 0 0 0;
     margin: 1px 4px 0 4px;
+    transition: 1s ease-in-out;
+}
+footer img:hover {
+    transform:  scale(1.5);
 }
 #image {
     width: 30%;
@@ -179,6 +183,9 @@ footer img {
     width: 60%;
     float: right;
     margin-bottom: 2em;
+}
+#intro p {
+    line-height: 1.5;
 }
 #goals {
     clear: both;
@@ -199,13 +206,118 @@ footer img {
     font-size: 130%;
     text-align: center;
     background-color: #d95a4e;
-    padding: 20px;
+    padding: 15px;
     color: #fff;
-    width: 200px;
+    width: 175px;
     margin: auto;
     display: block;
     border-radius: 10px;
 }
+#goals p {
+    line-height: 1.4;
+}
+#reflection {
+     line-height: 1.5;
+}
+/* Projects Page */
+#section1 {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #dfdddd;
+    padding: 1em 4em 2em 4em; 
+    margin-top: 3em;
+    margin-bottom: 3em;    
+}
+#section1 h2, h3 {
+    text-align: center;
+}
+#section1 h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+#section1 img {
+    margin-top: 1em;
+    max-width: 100%;
+}
+.goal-detail {
+    line-height: 1.5;
+}
+#section2 {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #dfdddd;
+    padding: 1em 4em 2em 4em; 
+    margin-top: 3em;
+    margin-bottom: 3em;    
+}
+#section2 h2, h3 {
+    text-align: center;
+}
+#section2 h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+#section2 img {
+    margin-top: 1em;
+    max-width: 100%;
+}
+#section3 {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px #dfdddd;
+    padding: 1em 4em 2em 4em; 
+    margin-top: 3em;
+    margin-bottom: 3em;    
+}
+#section3 h2, h3 {
+    text-align: center;
+}
+#section3 h4 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 2em;
+}
+.directions {
+    font-size: 90%;
+    text-align: center;
+    margin-top: 2em;
+}
+.goal {
+    background-color: #d95a4e;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2em 0em 2em 0em;
+}
+.goal-overview {
+    font-size: 140%;
+    text-align: center;
+    color: #333333;
+    margin-top: 1em;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 2em 0em 2em 0em;
+}
+
+#iframe-holder {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+#iframe-holder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*
 #overview {
     background-color: #fabdac;
@@ -339,6 +451,9 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
+}
+iframe {
+    border: none;
 }
 /* Print styles */
 @media print {
