@@ -8,7 +8,7 @@ Use: To provide a form for users to contact the author
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 23, 2020
-Tested: May 1, 2020; Passed on Chrome and Firefox browers.
+Tested: May 6, 2020; Passed on Chrome and Firefox browers.
 ************************************
     -->
         <meta charset="utf-8">
@@ -50,23 +50,31 @@ Tested: May 1, 2020; Passed on Chrome and Firefox browers.
     <main>
     <h2 class="main">Contact</h2>
         
-    <section id="form">
-        <h2 style="display: none;">Contact Form</h2>
-        <section class="contact-info">
-            <h2 style="display: none;">Contact Info</h2>
-            <article>Name</article>
-            <article>Email</article>
-            <article>Phone</article>
-        </section>
-        <section class="contact-info">
-            <h2 style="display: none;">Message</h2>
-            <article id="message">Message</article>
-        </section>
-         <section class="contact-info">
-             <h2 style="display: none;">Submission Button</h2>
-            <article id="click">Submit</article>
-        </section>
-    </section>    
+    
+    <form id="contact_form" action="mailto:foxti@umsystem.edu?Subject=Question%20or%20comment%20about%20the%20Tina%20Fox%20website" method="post" enctype="text/plain">
+       
+        
+        <label id="label" for="firstname">First name:</label>
+        <input type="text" id="firstname" placeholder="First name" autofocus required><br>
+        
+       
+        <label id="label" for="lastname" >Last name:</label>
+        <input type="text" id="lastname" placeholder="Last name" required><br>
+        
+       <label id="label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email address" required><br>
+        
+        
+        
+        <textarea id="message" placeholder="Add your message here." required></textarea>
+        <br>
+       
+        <input type="submit" id="submit" value="Send">
+        <input type="reset" id="reset" value="Reset">
+    </form>    
+        
+        
+    
     </main>
     <footer>
         &copy; 2020 Tina Fox | <img src="images/phone-icon.png" alt="" width="25"> 1+888-888-8888 <img src="images/email-icon.png" alt="" width="20"> <a href="mailto:foxti@umsystem.edu">foxti@umsystem.edu</a>
