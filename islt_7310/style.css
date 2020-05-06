@@ -5,7 +5,7 @@ Use: Styles all webpages in the islt_7310 project folder
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 2, 2020
-Tested: May 1, 2020; Passed on Chrome and Firefox browers.
+Tested: May 5, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
 header {
@@ -215,9 +215,11 @@ footer img:hover {
 }
 #goals p {
     line-height: 1.4;
+   
 }
 #reflection {
      line-height: 1.5;
+    
 }
 /* Projects Page */
 #section1 {
@@ -357,6 +359,7 @@ article {
 .row_cell {
     flex: 1;
 }
+/*
 #courses {
     display: flex;
     flex-wrap: wrap;
@@ -367,6 +370,7 @@ article {
     border-radius: 5px;
     box-shadow: 0px 0px 4px 1px #dfdddd;
 }
+*/
 /* End Flexbox code */
 .resume p {
     text-align: center;
@@ -455,6 +459,141 @@ label {
 iframe {
     border: none;
 }
+/* Table formatting */
+table {
+    border-top: 1px solid #d95a4e;
+    border: 1px solid #dad8d8;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-size: 95%;
+    margin-bottom: 5em;
+
+}
+
+th {
+    background-color: #d95a4e;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: left;
+}
+td {
+    padding: 20px;
+    text-align: center;
+}
+td:nth-child(2) {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edebeb;
+}
+figure {
+    width: 1000px;
+}
+figcaption {
+    color: #36bfb1;
+    font-size:  130%;
+    font-family: 'Biryani', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 2em;
+    display: block;
+}
+#subtitle {
+    color: #474544;
+    font-family: 'Biryani', sans-serif;
+    font-size: 80%;
+    text-align: center;
+}
+tfoot th {
+    padding: 20px;
+    font-family: 'Biryani', sans-serif;
+    font-size: 95%;
+    text-align: center;
+}
+/*Form Styling */
+
+textarea {
+    height: 20em;
+    width: 50em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e5e4e4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 2px #eeeeee;
+    margin: 0.5em auto;
+    margin-top: 1em;
+}
+form {
+    width: 800px;
+    margin: auto;
+}
+#label {
+    float: left;
+    width: 5em;
+    text-align: right;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #606060;
+    font-weight: 400;
+    font-size: 95%;
+     margin-right: 10px;
+}
+
+input {
+    margin-bottom: 2em;
+    width: 15em;
+    height: 2em;
+    border: 1px solid #e5e4e4;
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px 2px #eeeeee;
+    padding-left: 8px;
+}
+/*
+input:required, input[required] {
+    border: 3px solid #d95a4e;
+}
+*/
+input:valid {
+    border: 1px solid black;
+}
+
+#submit {
+    margin-top: 2em;
+    height: 3em;
+    background-color: #d95a4e;
+    color: #fff;
+    font-size: 100%;
+    margin-right: 10px;
+}
+#submit:hover {
+    background-color: #36bfb1;
+}
+#reset {
+    margin-top: 2em;
+    height: 3em;
+    background-color: #333333;
+    color: #fff;
+    font-size: 100%;
+}
+#reset:hover {
+    background-color: #36bfb1;
+}
+/*
+.submit-button {
+    margin:auto;
+    width: 300px;
+}*/
+#message {
+    font-size: 90%;
+}
+
 /* Print styles */
 @media print {
     h1 {
@@ -500,4 +639,72 @@ iframe {
     ul li {
         font-family: serif;
     }
+}
+
+
+/* Responsive Table Styling */
+@media only screen and (max-width: 779px) {
+    
+    h2.main {
+        text-align: left;
+    }
+    figcaption {
+       text-align: left;
+    }
+    table {
+        display: block;
+        width: 50%;
+    }
+    th, td{
+        display: block;
+        text-align: left;
+        padding: 8px;
+       
+    }
+    thead, tfoot {
+        display: none;
+    }
+    td {
+        font-size: 90%;
+    }
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 90%;
+        padding-top: 20px;
+    }
+  
+    td:nth-child(2) {
+       font-size: 110%;
+    }
+    tr td:last-child {
+       padding-bottom: 20px;
+    }
+    textarea {
+        height: 30em;
+        width: 40em;
+     }
+    form {
+        width: 600px;
+        margin: auto;
+    }
+    
+
+ 
+}
+@media only screen and (max-width: 414px) {    
+    table {
+       width: 30%;
+    }
+      textarea {
+        height: 30em;
+        width: 18em;
+     }
+    #submit {
+        display: block;
+        width: 50%;
+    }
+    #reset {
+        display: block;
+        width: 50%;
+    }   
 }
