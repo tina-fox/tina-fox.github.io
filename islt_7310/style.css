@@ -5,7 +5,7 @@ Use: Styles all webpages in the islt_7310 project folder
 Author: Tina Fox
 School/Term: University of Missouri, Spring 2020
 Developed: April 2, 2020
-Tested: May 5, 2020; Passed on Chrome and Firefox browers.
+Tested: May 7, 2020; Passed on Chrome and Firefox browers.
 ************************************
 */
 header {
@@ -228,7 +228,7 @@ footer img:hover {
     box-shadow: 0px 0px 4px 1px #dfdddd;
     padding: 1em 4em 2em 4em; 
     margin-top: 3em;
-    margin-bottom: 3em;    
+    margin-bottom: 1em;    
 }
 #section1 h2, h3 {
     text-align: center;
@@ -251,7 +251,7 @@ footer img:hover {
     box-shadow: 0px 0px 4px 1px #dfdddd;
     padding: 1em 4em 2em 4em; 
     margin-top: 3em;
-    margin-bottom: 3em;    
+    margin-bottom: 1em;    
 }
 #section2 h2, h3 {
     text-align: center;
@@ -271,7 +271,7 @@ footer img:hover {
     box-shadow: 0px 0px 4px 1px #dfdddd;
     padding: 1em 4em 2em 4em; 
     margin-top: 3em;
-    margin-bottom: 3em;    
+    margin-bottom: 1em;    
 }
 #section3 h2, h3 {
     text-align: center;
@@ -462,7 +462,7 @@ iframe {
 /* Table formatting */
 table {
     border-top: 1px solid #d95a4e;
-    border: 1px solid #dad8d8;
+    border: 1px solid #e4e4e4;
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
@@ -472,6 +472,7 @@ table {
 }
 
 th {
+    border: 1px solid #d95a4e;
     background-color: #d95a4e;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
@@ -593,6 +594,9 @@ input:valid {
 #message {
     font-size: 90%;
 }
+p.top {
+    text-align: right;
+}
 
 /* Print styles */
 @media print {
@@ -647,6 +651,7 @@ input:valid {
     
     h2.main {
         text-align: left;
+        font-size: 260%;
     }
     figcaption {
        text-align: left;
@@ -691,6 +696,7 @@ input:valid {
 
  
 }
+
 @media only screen and (max-width: 414px) {    
     table {
        width: 30%;
