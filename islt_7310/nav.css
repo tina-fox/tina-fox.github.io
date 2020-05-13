@@ -52,10 +52,10 @@ nav>ul li {
     
 }
 nav>ul li:hover {
-    background-color: #d95a4e;
+    background-color: #d75043;
 }
 nav>ul li:focus {
-    background-color: #d95a4e;
+    background-color: #d75043;
 }
 nav ul>li ul {
     position: absolute;
