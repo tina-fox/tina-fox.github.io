@@ -597,6 +597,10 @@ input:valid {
 p.top {
     text-align: right;
 }
+#breadnav {
+    margin-left: 5em;
+    padding-top: 20px;
+}
 
 /* Print styles */
 @media print {
@@ -692,7 +696,7 @@ p.top {
         width: 600px;
         margin: auto;
     }
-    #breadcrumb {
+    #breadnav {
         display: none;
     }
     
