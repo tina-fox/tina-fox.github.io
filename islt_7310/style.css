@@ -600,6 +600,9 @@ p.top {
 #breadnav {
     margin-left: 5em;
     padding-top: 20px;
+    font-family: sans-serif;
+    font-size: 90%;
+   
 }
 
 /* Print styles */
