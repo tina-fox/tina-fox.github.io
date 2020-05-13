@@ -19,7 +19,7 @@ nav ul {
 }
 .active {
     font-weight: bold;
-    background-color: #d95a4e;
+    background-color: #c94c40;
 }
 nav a:link {
     color: #fff;
@@ -46,7 +46,7 @@ nav>ul li {
     text-align: center;
     display: inline-block;
     border-bottom: 1px solid #ffffff;
-    background-color: #36bfb1;
+    background-color: #20ae9f;
     padding: 12px 12px 12px 20px;
     margin-top: 0;
     
