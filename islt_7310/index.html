@@ -49,7 +49,27 @@ Tested: May 9, 2020; Passed on Chrome and Firefox browers.
         </ul>
     </nav>
     
-  
+   <SCRIPT LANGUAGE="JavaScript" id="breadcrumb">
+<!--
+
+//Bread crumb script - Kevin Lynn Brown
+//Duplicate directory names bug fix by JavaScriptKit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+var path = "";
+var href = document.location.href;
+var s = href.split("/");
+for (var i=2;i<(s.length-1);i++) {
+path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+}
+i=s.length-1;
+path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+var url = window.location.protocol + "//" + path;
+document.writeln(url);
+//-->
+</script>
+
+
     
     <main>
         
@@ -108,7 +128,7 @@ Tested: May 9, 2020; Passed on Chrome and Firefox browers.
             </div>
         </section>
     </main>
-    
+    <p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
   <footer>
         &copy; 2020 Tina Fox | <img src="images/phone-icon.png" alt="" width="25"> 1+888-888-8888 <img src="images/email-icon.png" alt="" width="20"> <a href="mailto:foxti@umsystem.edu">foxti@umsystem.edu</a>
 </footer>
